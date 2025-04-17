@@ -1,0 +1,30 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Install the latest version of Apache
+    ansible.builtin.dnf:
+      name: httpd
+      state: latest
+
+  - name: Start service httpd and enable it
+    ansible.builtin.service:
+      name: httpd
+      state: started
+      enabled: yes
+
+  - name: Add user
+    ansible.builtin.user:
+      name: jenny
+
+  - name: Add user
+    ansible.builtin.user:
+      name: rose
+
+  - name: Add user
+    ansible.builtin.user:
+      name: jisoo
+
+  - name: Add user
+    ansible.builtin.user:
+      name: lisa
+       
