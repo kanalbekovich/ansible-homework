@@ -1,0 +1,3 @@
+[kaizen]
+44.211.75.247 ansible_user=ec2-user
+13.219.97.230 ansible_user=ec2-user
